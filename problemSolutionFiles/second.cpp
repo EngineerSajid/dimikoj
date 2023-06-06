@@ -1,3 +1,5 @@
+// Alhamdulillah
+
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -5,12 +7,13 @@ using namespace std;
 int main()
 {
     int n;
-    cout << "enter the testcase number : ";
+
     cin >> n;
 
     for (int i = 1; i <= n; i++)
     {
-        char str[100];
+        char str[120];
+        cin.ignore();
         cin.get(str, 100);
 
         int length = strlen(str);
@@ -24,4 +27,5 @@ int main()
             cout << "odd" << endl;
         }
     }
+    return 0;
 }
